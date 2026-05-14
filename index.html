@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Weekly Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Обзор недели">
+        <div class="sidebar-header">
+          <div class="week-nav" role="group" aria-label="Навигация по неделям">
+            <button class="icon-btn" type="button" aria-label="Предыдущая неделя">‹</button>
+            <button class="icon-btn" type="button" aria-label="Следующая неделя">›</button>
+          </div>
+          <button class="today-btn" type="button">Сегодня</button>
+        </div>
+
+        <section class="week-overview" aria-label="Дни недели" id="weekOverview"></section>
+      </aside>
+
+      <main class="main" aria-label="Детальный вид дня">
+        <header class="day-header">
+          <h1 id="dayTitle">Четверг, 5 марта</h1>
+        </header>
+
+        <section class="day-content" aria-label="Содержимое дня"></section>
+
+        <footer class="quick-input-wrap">
+          <input
+            class="quick-input"
+            type="text"
+            placeholder="Быстрая задача..."
+            aria-label="Быстрый ввод задачи"
+          />
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
